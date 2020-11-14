@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30sp"
+    android:padding="30dp"
     android:id="@+id/baseLayout"
     tools:context=".MainActivity">
 
@@ -12,16 +12,16 @@
         android:id="@+id/btnAE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
         android:text="@string/btnAE"
         app:layout_constraintTop_toTopOf="@+id/baseLayout"
         app:layout_constraintRight_toRightOf="@+id/baseLayout"/>
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/piechart"
-        android:layout_width="350sp"
-        android:layout_height="350sp"
-        android:layout_marginTop="16sp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
