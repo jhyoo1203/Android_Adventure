@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor = "#666666">
 
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map"
+        android:title="map"
+        app:cnb_iconColor="@color/navigation_color_map" />
+    <item
+        android:id="@+id/effect"
+        android:title="after effect"
+        android:icon="@drawable/effect"
+        app:cnb_iconColor="@color/navigation_color_effect"/>
+    <item
+        android:id="@+id/alerts"
+        android:title="alerts"
+        android:icon="@drawable/alerts"
+        app:cnb_iconColor="@color/navigation_color_alerts"/>
 </menu>
