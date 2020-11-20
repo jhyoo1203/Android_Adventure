@@ -18,4 +18,5 @@
         android:title="alerts"
         android:icon="@drawable/alerts"
         app:cnb_iconColor="@color/navigation_color_alerts"/>
+    
 </menu>
