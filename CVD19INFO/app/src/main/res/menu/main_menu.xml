@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/my_page_item"
+            android:title="마이페이지" />
+        <item
+            android:id="@+id/symptom_info_item"
+            android:title="코로나 증상 정보" />
+        <item
+            android:id="@+id/symptom_chart_item"
+            android:title="코로나 증상 발생률" />
+        <item
+            android:id="@+id/after_effect_info_item"
+            android:title="코로나 후유증 정보" />
+        <item
+            android:id="@+id/after_effect_chart_item"
+            android:title="코로나 후유증 발생률" />
+        <item
+            android:id="@+id/emergency_alerts_item"
+            android:title="안전 안내 문자" />
+    </group>
+</menu>
