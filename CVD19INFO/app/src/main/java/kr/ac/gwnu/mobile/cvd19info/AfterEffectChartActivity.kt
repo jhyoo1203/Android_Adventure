@@ -3,9 +3,11 @@ package kr.ac.gwnu.mobile.cvd19info
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.after_effect_chart_layout.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class AfterEffectChartActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.after_effect_chart_layout)
@@ -14,14 +16,21 @@ class AfterEffectChartActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_backspace_white) // 홈버튼 이미지 변경
         supportActionBar?.setDisplayShowTitleEnabled(false) // 툴바에 타이틀 안보이게
+
+        btnAEC.setOnClickListener {
+            val dlg: AfterEffectDialog = AfterEffectDialog(this)
+            dlg.show(supportFragmentManager, "AfterEffectDialog")
+        }
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home->{ // 메뉴 버튼
+        when (item.itemId) {
+            android.R.id.home -> { // 메뉴 버튼
                 super.onBackPressed()
             }
         }
         return super.onOptionsItemSelected(item)
     }
 }
+
