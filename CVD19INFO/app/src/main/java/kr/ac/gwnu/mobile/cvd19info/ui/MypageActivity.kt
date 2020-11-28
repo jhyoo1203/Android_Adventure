@@ -1,9 +1,10 @@
-package kr.ac.gwnu.mobile.cvd19info
+package kr.ac.gwnu.mobile.cvd19info.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.toolbar.*
+import kr.ac.gwnu.mobile.cvd19info.R
 
 class MypageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:theme="@style/Theme.AppCompat.NoActionBar"
     android:id="@+id/main_drawer_layout"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <include
         android:layout_width="match_parent"

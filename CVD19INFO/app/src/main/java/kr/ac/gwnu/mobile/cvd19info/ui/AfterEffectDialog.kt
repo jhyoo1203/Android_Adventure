@@ -1,16 +1,20 @@
-package kr.ac.gwnu.mobile.cvd19info
+package kr.ac.gwnu.mobile.cvd19info.ui
 
 import android.app.Dialog
 import android.content.Context
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
+import com.github.mikephil.charting.data.PieData
+import kotlinx.android.synthetic.main.after_effect_chart_layout.*
 
 class AfterEffectDialog(context: Context): DialogFragment() {
     private val contextdlg = context
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        var aeArray = arrayOf("피로", "호흡곤란", "관절통증") //후유증 추가
+        var aeArray = arrayOf("피로", "호흡곤란", "관절통증", "가슴통증", "기침", "후각소실", "건조증후근", "비염",
+        "적목현상", "미각장애", "두통", "가래", "식욕저하", "인두통", "어지럼증", "근육통", "설사", "혈전", "탈모")
+
         var selectedArray = ArrayList<Int>() //체크박스 체크 넣을 것
         val dlg: androidx.appcompat.app.AlertDialog.Builder = androidx.appcompat.app.AlertDialog.Builder(
             contextdlg,  android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)

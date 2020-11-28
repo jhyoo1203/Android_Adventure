@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MypageActivity"/>
-        <activity android:name=".SymptomInfoActivity"/>
-        <activity android:name=".SymptomChartActivity"/>
-        <activity android:name=".AfterEffectInfoActivity"/>
-        <activity android:name=".AfterEffectChartActivity"/>
-        <activity android:name=".EmergencyAlertsActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MypageActivity"/>
+        <activity android:name=".ui.SymptomInfoActivity"/>
+        <activity android:name=".ui.SymptomChartActivity"/>
+        <activity android:name=".ui.AfterEffectInfoActivity"/>
+        <activity android:name=".ui.AfterEffectChartActivity"/>
+        <activity android:name=".ui.EmergencyAlertsActivity"/>
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
