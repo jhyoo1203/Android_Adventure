@@ -51,4 +51,5 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0' // DrawerLayout
     implementation 'com.google.android.material:material:1.0.0' // NavigationView
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
 }
