@@ -1,12 +1,14 @@
 package kr.ac.gwnu.mobile.cvd19info.ui
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.main_layout.*
 import kotlinx.android.synthetic.main.toolbar.*
 import kr.ac.gwnu.mobile.cvd19info.R
 
@@ -16,6 +18,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
 
         nav_view.setNavigationItemSelectedListener(this) //navigation 리스너
+        nav_view.setItemIconTintList(null)
 
         setSupportActionBar(my_toolbar) // 툴바를 액티비티의 앱바로 지정
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
@@ -39,7 +42,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.symptom_chart_item -> startActivity(Intent(this, SymptomChartActivity::class.java))
             R.id.after_effect_info_item -> startActivity(Intent(this, AfterEffectInfoActivity::class.java))
             R.id.after_effect_chart_item -> startActivity(Intent(this, AfterEffectChartActivity::class.java))
-            R.id.emergency_alerts_item -> startActivity(Intent(this, EmergencyAlertsActivity::class.java))
         }
         return false
     }

@@ -21,7 +21,6 @@
         <activity android:name=".ui.SymptomChartActivity"/>
         <activity android:name=".ui.AfterEffectInfoActivity"/>
         <activity android:name=".ui.AfterEffectChartActivity"/>
-        <activity android:name=".ui.EmergencyAlertsActivity"/>
         <activity android:name=".ui.MainActivity"/>
     </application>
 
