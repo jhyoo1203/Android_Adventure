@@ -28,37 +28,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAEC" />
 
-
-    <ScrollView
-        android:id="@+id/infoScroll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/warningMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/piechart">
-
-        <TextView
-            android:id="@+id/infoAE"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="후유증 정보 출력 확인용 text"/>
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/warningMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:text="경고문구 위치 확인용 text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,7 +47,6 @@ class AfterEffectChartActivity : AppCompatActivity() {
                 })
 
             var listener = DialogInterface.OnClickListener { _, which ->
-                infoAE.text = ""
                 val yValues: ArrayList<PieEntry> = ArrayList()
                 with(yValues) {
                     for(i in 0 until selectItems.size) {
