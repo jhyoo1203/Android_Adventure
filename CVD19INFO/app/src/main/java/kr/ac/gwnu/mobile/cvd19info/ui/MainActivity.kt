@@ -1,6 +1,7 @@
 package kr.ac.gwnu.mobile.cvd19info.ui
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
