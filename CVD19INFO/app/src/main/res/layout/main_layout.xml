@@ -15,8 +15,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="90dp"
         android:text="코로나19 자가진단"
-        android:theme="@style/AppTheme"
+        android:textColor="#000000"
         android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,9 +35,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,29 +47,24 @@
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="발열" />
+            android:text="증상 있음" />
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="기침" />
+            android:text="증상 없음" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="인후통" />
-
-        <Button
-            android:id="@+id/btn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="증상 없음" />
+            android:text="초기화" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import kr.ac.gwnu.mobile.cvd19info.R
 import kr.ac.gwnu.mobile.cvd19info.util.NonSymptomDecorator
 import kr.ac.gwnu.mobile.cvd19info.util.SymptomDecorator
 
+
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,21 +27,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu_white) // 홈버튼 이미지 변경
         supportActionBar?.setDisplayShowTitleEnabled(false) // 툴바에 타이틀 안보이게
 
-        calendarView.setOnDateChangedListener { widget, date, selected ->
+        calendarView.setOnDateChangedListener { _, date, _ ->
             btn1.setOnClickListener {
                 calendarView.addDecorators(SymptomDecorator(this, date))
             }
             btn2.setOnClickListener {
-                calendarView.addDecorators(SymptomDecorator(this, date))
-            }
-            btn3.setOnClickListener {
-                calendarView.addDecorators(SymptomDecorator(this, date))
-            }
-            btn4.setOnClickListener {
                 calendarView.addDecorators(NonSymptomDecorator(this, date))
             }
+            btn3.setOnClickListener {
+                calendarView.removeDecorators()
+            }
         }
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
