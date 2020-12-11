@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,40 +12,47 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="90dp"
-        android:background="#00ff0000"
+        android:theme="@style/ButtonStyle"
         android:drawableLeft="@drawable/ic_virus"
         android:gravity="left|center_vertical"
-        android:text="코로나 후유증 종류"
+        android:text="코로나 주요 후유증 종류"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imgAEI"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
         android:layout_marginTop="30dp"
+        android:src="@drawable/hairloss"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAEI" />
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
-        android:text="설명 출력 text"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="사례 출력 text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgAEI">
+        <TextView
+            android:id="@+id/tvAEI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:text="대체로 37.5도 이상의 고열이 나타납니다.\n가장 먼저 나타나는 코로나 증상이 열이 나는 것이므로 체온 측정을 통해 초기 진단, 격리, 치료를 앞당길 수 있습니다."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAEI" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

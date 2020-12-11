@@ -47,7 +47,7 @@ class SymptomChartActivity : AppCompatActivity() {
                     }
                 })
 
-            var listener = DialogInterface.OnClickListener { _, which ->
+            var listener = DialogInterface.OnClickListener { _, _ ->
                 val yValues: ArrayList<PieEntry> = ArrayList()
                 with(yValues) {
                     for(i in 0 until selectItems.size) {

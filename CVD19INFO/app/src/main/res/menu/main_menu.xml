@@ -8,7 +8,7 @@
         <item
             android:id="@+id/symptom_info_item"
             android:icon="@drawable/ic_info"
-            android:title="코로나 증상 정보" />
+            android:title="코로나 주요 증상 정보" />
         <item
             android:id="@+id/symptom_chart_item"
             android:icon="@drawable/ic_chart"
@@ -16,7 +16,7 @@
         <item
             android:id="@+id/after_effect_info_item"
             android:icon="@drawable/ic_info"
-            android:title="코로나 후유증 정보" />
+            android:title="코로나 주요 후유증 정보" />
         <item
             android:id="@+id/after_effect_chart_item"
             android:icon="@drawable/ic_chart"
