@@ -65,7 +65,7 @@ class AfterEffectChartActivity : AppCompatActivity() {
                     setValueTextSize(10f)
                     setValueTextColor(Color.BLACK)
                     val des = Description()
-                    des.text = "코로나 후유증 발생률"
+                    des.text = "코로나 후유증 발생률(%)"
                     piechart.description = des
                 }
                 piechart.data = pieData
